@@ -1,0 +1,44 @@
+class Person {
+	String name;
+	int age;
+	
+	void eat (){
+		System.out.println ("吃饭");
+	}
+	void walk(){
+		System.out.println ("走路");
+	}
+	void sleep(){
+		System.out.println ("碎觉");
+	}
+	void introduce () {
+		System.out.println ("我的名字叫"+name+"我的芳龄是"+age);
+	}
+}
+
+class Students extends Person{
+	int grade;
+	int classroom;
+	
+	void study (){
+		System.out.println ("学习");
+	}
+	void introduce () {
+		super.introduce();
+		System.out.println ("我的班级是"+classroom);}
+}
+
+class Programmer extends Person{
+	String workPlace;
+	int salary;
+	String job;
+	
+	void introduce (){
+		super.introduce ();
+		System.out.println ("我的工作地点是"+workPlace+",我的工资是"+salary+",我的工作是"+job);
+	}
+	
+	
+	
+	
+}
